@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.root.reversi.Menu_principal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="153dp"
+            android:gravity="bottom|center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/marge_bottom_elements"
+                android:fontFamily="casual"
+                android:text="Reversi"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/reversiFont"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/ayuda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/marge_bottom_elements"
+                android:background="@drawable/button_shape_2"
+                android:onClick="showHelp"
+                android:padding="@dimen/padding_buttons"
+                android:text="@string/ajuda"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/comencar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/marge_bottom_elements"
+                android:background="@drawable/button_shape"
+                android:onClick="showConfig"
+                android:padding="@dimen/padding_buttons"
+                android:text="@string/inici_partida"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/sortir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/marge_bottom_elements"
+                android:background="@drawable/button_shape_2"
+                android:onClick="finish"
+                android:padding="@dimen/padding_buttons"
+                android:text="@string/sortir"
+                android:textColor="@android:color/background_light" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

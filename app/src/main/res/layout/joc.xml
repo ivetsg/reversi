@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+   <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:horizontalSpacing="0dp"
+        android:stretchMode="columnWidth"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/puntuacioBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/marge_dreta_elements_8"
+            android:text="@string/puntsBlack"
+            android:textSize="@dimen/txtPunts" />
+
+        <TextView
+            android:id="@+id/puntuacioWhite"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/puntsWhite"
+            android:textSize="@dimen/txtPunts" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tirador"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/torn"
+            android:textSize="@dimen/txtPunts" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/contador"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/txtPunts" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/casellesRestants"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/txtPunts" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/nivellDificultat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/txtPunts" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/undo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape_2"
+            android:layout_marginRight="@dimen/marge_dreta_elements_8"
+            android:padding="@dimen/padding_buttons"
+            android:text="@string/undo"
+            android:textColor="@android:color/background_light" />
+
+        <Button
+            android:id="@+id/redo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape_2"
+            android:padding="@dimen/padding_buttons"
+            android:text="@string/redo"
+            android:textColor="@android:color/background_light" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+

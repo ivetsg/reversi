@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.root.reversi.Ajuda">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:gravity="top|center"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:layout_height="wrap_content"
+            tools:ignore="WebViewLayout">
+
+            <WebView
+                android:id="@+id/instruccions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center"
+                android:lineSpacingExtra="6sp"
+                android:padding="@dimen/padding_webview"
+                />
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="243dp"
+                android:layout_height="128dp"
+                android:layout_below="@id/instruccions"
+                android:scaleType="centerInside"
+                android:src="@drawable/reversi" />
+
+            <Button
+                android:id="@+id/anarAlJoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img1"
+                android:layout_marginTop="10dp"
+                android:onClick="goBack"
+                android:text="@string/anaraljoc" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

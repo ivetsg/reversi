@@ -1,0 +1,107 @@
+<resources>
+    <string name="paginaprincipal">Principal</string>
+    <string name ="ajuda">Ajuda</string>
+    <string name ="comencar">Començar partida</string>
+    <string name ="sortir">Sortir</string>
+
+
+
+    <!--String AJUDA-->
+    <string name ="benvinguts">Benvinguts al joc de REVERSI!</string>
+    <string name="anaraljoc">Anar al Joc</string>
+    <string name="funcionament">Praesent tempor, mauris vel porta interdum, dolor enim ornare erat, vitae vestibulum lectus lectus eget dolor. Morbi consequat sit amet ipsum quis feugiat. Aenean malesuada feugiat nisl eu pretium. Praesent scelerisque pulvinar tellus, vulputate ornare lacus interdum nec. Sed a elit tristique, laoreet tortor in, cursus mi. Donec erat turpis, vehicula nec sagittis tempor, consectetur ac nisl. Aliquam erat volutpat. Phasellus vel dolor vitae nulla bibendum vestibulum et in purus. Nulla facilisi. Morbi pellentesque lacinia congue. Morbi felis sapien, lobortis vitae libero vel, faucibus pellentesque quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam consectetur tristique fringilla.</string>
+    <string name="nomJoc">Reversi</string>
+    <string name="instruccionsHtml">
+        <![CDATA[
+        <html>
+        <style>
+        p{text-align:justify;}
+        ul li{text-align:justify;}
+        .instruccions{padding:7px;}
+        h1{color:blue;font-size:20px;text-align:center;}
+        </style>
+        <div class="instruccions">
+        <h1>Benvinguts al joc del REVERSI<h1>
+        <h2>Origen e historia</h2>
+        <p">A sabiendas de que se trata de un juego ya de relativa antigüedad, el Reversi es un juego de tablero cuyo origen no está todavía claro. Las primeras referencias que se tienen de juegos similares se remontan a finales del siglo XIX, y se trataba de juegos a los que se aplicaba nombres diferentes del actual y en los que cambiaba la forma o tamaño del tablero. En 1870 aparece un juego similar que se juega sobre un tablero en forma de cruz. Posteriormente aparece ya un juego que se juega en tablero cuadrado de 8x8</p>
+        <h2>Descripción</h2>
+        <p>TEl Reversi enfrenta a dos jugadores que desarrollan el juego sobre un damero (es indiferente que las casillas sean de dos colores siempre que se trate de un tablero cuadrado de 64, distribuidas en ocho filas y ocho columnas). Se utilizan además 64 fichas iguales de dos colores: el anverso de un color y el reverso de otro diferente.</p>
+        <h2>Objetivo del juego</h2>
+        <p>El objetivo del juego para cada jugador es acabar la partida con un número de fichas de su color sobre el tablero superior al de su oponente.</p>
+        <h2>Inicio del juego</h2>
+        <p>Los jugadores han de decidir antes que nada el color con el que va a competir cada uno de ellos.</p>
+        <p>Seguidamente se situarán cuatro fichas (dos de cada color) en las cuatro casillas centrales del tablero, de forma que cada pareja de fichas iguales forme una diagonal entre sí.</p>
+        <p>Realiza el primer movimiento el jugador que juegue con negras, alternando el turno entre uno y otro para los movimientos sucesivos.</p>
+        <h2>Movimientos</h2>
+        <p>Los movimientos consisten en incorporar fichas al tablero a razón de una por turno, nunca en desplazar fichas de las que ya estuvieran sobre el tablero.</p>
+        <p>Las incorporaciones deberán hacerse en orden a las siguientes normas:</p>
+        <ul>
+            <li>Sólo podrá incorporarse una ficha flanquendo a una o varias fichas contrarias.</li>
+            <li>Por flanquear se entiende el hecho de colocar la nueva ficha en un extremo de una hilera de fichas del color del contrario (una o más fichas) en cuyo extremo opuesto hay una ficha del color de la que se incorpora, sin que existan casillas libres entre ninguna de ellas. Esta hilera puede ser indistintamente vertical, horizontal o diagonal. De este modo, las fichas del contrincante quedan encerradas entre una que ya estaba en el tablero y la nueva ficha.</li>
+            <li>Cada vez que un jugador incorpora una ficha, y por lo tanto encierra a otras del contrario, debe dar la vuelta a las fichas encerradas convirtiéndolas así en propias.</li>
+            <li>Si en una sola incorporación se provocase esta situación de flanqueo en más de una línea, se voltearán todas las fichas contrarias que estuvieran implicadas en cada un de los flanqueos.</li>
+            <li>Si no fuera posible para un jugador encerrar a ninguna ficha, deberá pasar en su turno, volviendo el mismo a su oponente.</li>
+        </ul>
+        <h2>Final</h2>
+        <p>La partida finaliza cuando todas las casillas del tablero son ocupadas o ninguno de los 2 jugadores tiene posibilidad de incorpar una nueva ficha. </p>
+        <p>En cualquier caso vence el jugador que tiene más fichas sobre el tablero.</p>
+        </div>
+        </html>
+
+
+
+]]>
+</string>
+    <!-- Strings CONFIGURACIO -->
+    <string name="configuracio">Configuració</string>
+    <string name="alias">Alias identificatiu</string>
+    <string name="midaGraella">Mida de la graella</string>
+    <string name="controlTemps">Control del temps</string>
+    <string name="enrere">Tornar enrere</string>
+    <string name="segons">%s segons</string>
+    <string name="inici_partida">Iniciar Partida</string>
+    <string name="checkControl">Has activat el control de temps a %s</string>
+    <string name="uncheckControl">Has desactivat el control de temps</string>
+    <string name="jugador_defecte">Player 1</string>
+    <string name="facil">Fàcil</string>
+    <string name="normal">Normal</string>
+    <string name="dificil">Difícil</string>
+    <string name="nivelldificultat">Nivell de dificultat</string>
+    <string name="contraqui">Contra qui vols jugar?</string>
+    <string name="maquina">Màquina</string>
+    <string name="jugador">Jugador</string>
+
+
+
+
+
+    <!-- Strings JOC -->
+    <string name="partidamarxa">Partida en marxa</string>
+    <string name="puntsWhite">White: %s</string>
+    <string name="puntsBlack">Black: %s</string>
+    <string name="torn">Tira el jugador: %s</string>
+    <string name="guanyador">El guanyador és: %s</string>
+    <string name="temps_esgotat">Temps esgotat!</string>
+    <string name="novalida">Casella no vàlida. Repeteix.</string>
+    <string name="casellesRestants">Caselles pendents: %s</string>
+    <string name="nivellDificultat">Nivell: %s</string>
+    <string name="empat">Hi ha hagut un empat!</string>
+    <string name="partidaFinalitzada">Partida finalitzada!</string>
+
+    <!--Strings Resultats -->
+    <string name="resultatsPartida">Resultats partida</string>
+    <string name="diahora">Dia i hora</string>
+    <string name="valorsLog">Valors del log</string>
+    <string name="emailDest">E-mail destinatari</string>
+    <string name="hintEmail">elteucorreu@email.com</string>
+    <string name="enviarEmail">Enviar e-mail</string>
+    <string name="novaPartida">Nova Partida</string>
+    <string name="tempsEsgotat">Temps esgotat! Repeteix sort...</string>
+    <string name="bloqueigPartida">Bloqueig us heu quedat sense moure cap dels dos</string>
+    <string name="hasGuanyat">Game Over, Ben fet HAS GUANYAT!</string>
+    <string name="hasPerdut">Game Over, Mala sort HAS PERDUT!</string>
+    <string name="heuEmpatat">Vaja, HEU EMPATAT!</string>
+    <string name="undo">Undo</string>
+    <string name="redo">Redo</string>
+
+</resources>

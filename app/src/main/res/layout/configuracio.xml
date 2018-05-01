@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top|left|center"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_element">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/marge_bottom_titols">
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/aliasText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alias"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/marge_bottom_elements">
+
+            <ImageView
+                android:id="@+id/user"
+                android:layout_width="@dimen/icono_width"
+                android:layout_height="@dimen/icono_heigth"
+                android:src="@drawable/user" />
+
+            <EditText
+                android:id="@+id/alias"
+                android:layout_width="@dimen/text_width"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:inputType="text"
+                android:labelFor="@id/aliasText"
+                android:padding="5dp"
+                android:text="@string/jugador_defecte" />
+
+        </LinearLayout>
+
+            <TextView
+                android:id="@+id/midaGraella"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/midaGraella"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/marge_bottom_titols"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/marge_bottom_elements">
+
+            <ImageView
+                android:id="@+id/taulell"
+                android:layout_width="@dimen/icono_width"
+                android:layout_height="@dimen/icono_heigth"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/taulell" />
+
+                <SeekBar
+                    android:id="@+id/seekGraella"
+                    android:layout_width="@dimen/seek_width"
+                    android:layout_height="wrap_content"
+                    android:elevation="0dp"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/seekNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/controlTemps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/controlTemps"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/marge_bottom_titols"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/marge_bottom_elements">
+
+            <ImageView
+                android:id="@+id/rellotge"
+                android:layout_width="@dimen/icono_width"
+                android:layout_height="@dimen/icono_heigth"
+                android:src="@drawable/rellotge"
+                android:layout_marginRight="@dimen/marge_dreta_elements_12"
+                />
+
+            <CheckBox
+                android:id="@+id/checkbox_tiempo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/marge_dreta_elements_12"
+                android:layout_marginTop="@dimen/marge_top_element_2"
+                android:checked="true"
+                android:onClick="muestraTextoCheck"
+                android:scaleX="1.5"
+                android:scaleY="1.5" />
+
+            <TextView
+                android:id="@+id/temps_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/txtContraqui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contraqui"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/marge_bottom_titols"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/marge_bottom_elements">
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/radioLevel">
+
+                <RadioButton
+                    android:id="@+id/radio_maquina"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/maquina" />
+
+                <RadioButton
+                    android:id="@+id/radio_jugador"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/jugador"
+                    />
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/dificultatTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/marge_bottom_titols"
+            android:text="@string/nivelldificultat"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/marge_bottom_elements"
+            android:id="@+id/levelLinear">
+
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/radioNivell">
+
+                <RadioButton
+                    android:id="@+id/radio_facil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/facil" />
+
+                <RadioButton
+                    android:id="@+id/radio_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/normal" />
+
+                <RadioButton
+                    android:id="@+id/radio_dificil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dificil" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom|center"
+            android:padding="@dimen/marge_bottom_elements">
+
+            <Button
+                android:id="@+id/endarrera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_shape_2"
+                android:layout_marginRight="@dimen/marge_dreta_elements_8"
+                android:onClick="goBack"
+                android:padding="@dimen/padding_buttons"
+                android:text="@string/enrere"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/inici_partida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_shape"
+                android:onClick="inici"
+                android:padding="@dimen/padding_buttons"
+                android:text="@string/inici_partida"
+                android:textColor="@android:color/background_light" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
+
+</ScrollView>

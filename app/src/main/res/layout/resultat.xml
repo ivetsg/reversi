@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top|center"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_element">
+
+        <TextView
+            android:id="@+id/resultatsPartida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/resultatsPartida"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/diaHora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/diahora"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editHora"
+                android:layout_width="@dimen/text_width"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:enabled="false"
+                android:inputType="text"
+                android:labelFor="@id/aliasText"
+                android:padding="5dp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/valorsLog"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editlog"
+                android:enabled="false"
+                android:layout_width="@dimen/text_width"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:inputType="textMultiLine"
+                android:padding="5dp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/emailDest"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editEmail"
+                android:layout_width="@dimen/text_width"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:inputType="textEmailAddress"
+                android:padding="5dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/enviarEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/marge_bottom_elements"
+                android:background="@drawable/button_shape"
+                android:onClick="enviarEmail"
+                android:padding="@dimen/padding_buttons"
+                android:text="@string/enviarEmail"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/novaPartida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/marge_bottom_elements"
+                android:background="@drawable/button_shape"
+                android:onClick="novaPartida"
+                android:padding="@dimen/padding_buttons"
+                android:text="@string/novaPartida"
+                android:textColor="@android:color/background_light" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <Button
+            android:id="@+id/sortir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/marge_bottom_elements"
+            android:background="@drawable/button_shape_2"
+            android:onClick="goBack"
+            android:padding="@dimen/padding_buttons"
+            android:text="@string/sortir"
+            android:textColor="@android:color/background_light" />
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Configuracio -->
+    <dimen name="padding_webview">15dp</dimen>
+    <dimen name="padding_element">15dp</dimen>
+    <dimen name="icono_width">35dp</dimen>
+    <dimen name="icono_heigth">35dp</dimen>
+    <dimen name="text_width">200dp</dimen>
+    <dimen name="seek_width">227dp</dimen>
+    <dimen name="padding_buttons">6dp</dimen>
+    <dimen name="marge_bottom_titols">5dp</dimen>
+    <dimen name="marge_bottom_elements">20dp</dimen>
+    <dimen name="marge_dreta_elements_8">8dp</dimen>
+    <dimen name="marge_dreta_elements_12">12dp</dimen>
+    <dimen name="marge_top_element_2">2dp</dimen>
+
+
+    <!--Joc -->
+    <dimen name="txtWidth">35sp</dimen>
+    <dimen name="txtPunts">20sp</dimen>
+
+    <!--Inici -->
+    <dimen name="reversiFont">55dp</dimen>
+
+
+
+</resources>
